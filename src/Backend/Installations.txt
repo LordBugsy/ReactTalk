@@ -1,0 +1,15 @@
+Needed for Backend:
+
+If you want only want to make sure the backend is working properly, make sure you're in the directory where you set your "server.js" file and use 
+"node server.js" to check for any errors. If there are, fix them asap, other than that, you're good!
+
+- npm install dotenv
+- npm install cors
+- npm install express
+- npm install mongoose
+- npm install axios
+- npm install concurrently --save-dev (to run both frontend and backend at the same time with only 'npm run start')
+    add " "start": "concurrently \"npm run server\" \"npm run client\"" " at the bottom of the "scripts" value in package.json and make sure server and client are set up properly.
+
+Needed for Frontend:
+- npm install react-router-dom

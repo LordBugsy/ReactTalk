@@ -1,0 +1,115 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out both;
+}
+
+.profileContainer {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+    color: white;
+    width: 100%;
+    padding-bottom: 5em;
+}
+
+.profile {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.talksJoined, .talksCreated {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.talks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.talk {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    min-height: 250px;
+    padding: 10px;
+    background-color: rgb(37, 37, 100);
+    border-radius: 10px;
+}
+
+.talkTitle {
+    text-align: center;
+}
+
+.reacterAmount {
+    color: orange;
+    font-size: 0.75em;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.button {
+    color: white;
+    background-color: black;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
+}
+
+.button.view {
+    background-color: rgb(204, 216, 28);
+}
+
+.button.view:hover {
+    background-color: rgb(187, 173, 24);
+}
+
+.button.delete {
+    background-color: rgb(216, 28, 28);
+}
+
+.button.delete:hover {
+    background-color: rgb(173, 24, 24);
+}
+
+.noTalks {
+    text-align: center;
+    color: rgb(186, 186, 186);
+    font-size: 1.75em;
+}
+
+.noTalks * {
+    color: rgb(69, 224, 82);
+    cursor: pointer;
+    text-decoration: none;
+}

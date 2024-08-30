@@ -1,0 +1,93 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out both;
+}
+
+.fadeOut {
+    animation: fadeOut 0.5s ease-in-out both;
+}
+
+.contactContainer {
+    opacity: 0;
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.talkTitle {
+    text-align: center;
+}
+
+.target {
+    font-weight: bold;
+}
+
+.contact .contactInput {
+    width: 50%;
+    max-width: 1750px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5em;
+    height: 440px;
+    resize: none;
+}
+
+.contact .contactInput:focus {
+    outline: none;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.5em;
+}
+
+.button.send {
+    background-color: rgb(38, 182, 38);
+}
+
+.button.report:hover {
+    background-color: rgb(22, 154, 22);
+}
+
+@media only screen and (max-width: 950px) {
+    .contact .contactInput {
+        width: 90%;
+    }
+}

@@ -1,0 +1,412 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.talkContainer, .searchContainer {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 5em;
+    position: relative;
+}
+
+.talkHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 4em;
+    padding-top: 1em;
+    left: 0;
+    background-color: var(--bodyColour);
+    box-shadow: 0 5px 10px black;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.right {
+    margin-right: 5em;
+}
+
+.button {
+    color: white;
+    background-color: black;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    border: none;
+}
+
+.button.moreInfo {
+    background-color: rgb(56, 164, 131);
+}
+
+.button.moreInfo:hover {
+    background-color: rgb(22, 135, 116);
+}
+
+.join {
+    background-color: rgb(28, 197, 90);
+}
+
+.leave {
+    background-color: rgb(197, 28, 28);
+}
+
+.report {
+    background-color: rgb(169, 171, 27);
+}
+
+.talkName {
+    font-weight: bold;
+    color: white;
+    font-weight: 30px;
+}
+
+.icon {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 4em;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: rgb(28, 197, 90);
+}
+
+.talkMessages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: -20px;
+    height: 100%;
+}
+
+.talkCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+.sep {
+    margin-top: 5em;
+}
+
+.messageSep {
+    margin-bottom: 3em;
+}
+
+.talkAuthor {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.talkAuthor .authorImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.talkAuthor .authorName {
+    font-weight: bold;
+    color: white;
+}
+
+.talkText {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+.talkInput {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 575px;
+    bottom: 2em;
+    border: 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.talkInput .input {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 2em;
+    margin-left: 20px;
+    background-color: transparent;
+    font-weight: 800;
+}
+
+.talkInput .button {
+    background-color: black;
+    color: white;
+    border: none;
+    height: 100%;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.talkInput .button.send {
+    width: 80px;
+    font-size: 2em;
+    background-color: rgb(95, 183, 95);
+}
+
+.talkInput .button.send:hover {
+    background-color: rgb(29, 160, 35);
+}
+
+.talkInput .button.disabled {
+    background-color: rgb(200, 200, 200);
+    cursor:default;
+}
+
+.responsive {
+    display: none;
+}
+
+.bottomRef {
+    margin-bottom: 7em;
+}
+
+/* Create Talk */
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out both;
+}
+
+.fadeOut {
+    animation: fadeOut 0.5s ease-in-out both;
+}
+
+.createTalkContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 5em;
+    opacity: 0;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.createTalk {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(33, 34, 65);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.createTalk .input {
+    width: 680px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.createTalk .label {
+    font-size: 1.2em;
+    color: white;
+    margin: 10px;
+}
+
+.createTalk .textArea {
+    width: 680px;
+    height: 350px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.createTalk .controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.createTalk .button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.5s;
+    margin-top: 40px;
+}
+
+.createTalk .button.disabled {
+    background-color: rgb(135, 135, 135);
+    cursor: default;
+}
+
+.createTalk .button.create {
+    background-color: rgb(28, 197, 90);
+}
+
+.createTalk .button.create:hover {
+    background-color: rgb(29, 160, 35);
+}
+
+.createTalk .button.cancel {
+    background-color: rgb(197, 28, 28);
+}
+
+.createTalk .button.cancel:hover {
+    background-color: rgb(160, 29, 35);
+}
+
+.noMessages {
+    font-weight: bold;
+    color: white;
+    font-size: 2.2em;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+.talkTitle {
+    margin-bottom: -30px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.talk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    background-color: rgb(40, 43, 116);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.bold {
+    font-weight: bold;
+    color: rgb(48, 217, 87);
+}
+
+.noResults {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 810px) {  
+    .createTalk .input, .createTalk .textArea {
+        width: 30rem;
+        margin-left: -10px;
+    }
+
+    .createTalk .label {
+        margin-left: -10px;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .right {
+        display: none;
+    }
+
+    .responsive {
+        display: flex;
+        gap: 20px;
+        top: 9em;
+        position: fixed;
+    }
+
+    .talkInput {
+        width: 100%;
+    }
+
+    .talkHeader .icon {
+        margin-left: 30px;
+    }
+
+    .talkName {
+        margin-right: 30px;
+    }
+
+    .createTalk .input, .createTalk .textArea {
+        width: 20rem;
+        margin-left: 0;
+    }
+
+    .createTalk .label {
+        margin-left: 0;
+    }
+}
