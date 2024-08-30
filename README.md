@@ -1,4 +1,6 @@
 # ReactTalk
+![ReactTalk](image.png)
+
 ReactTalk is a real-time chat application where users can create and join discussions on various topics. It allows users to sign up, create accounts, and participate in "talks" (live chat rooms).
 
 ## Features
