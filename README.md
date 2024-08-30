@@ -22,7 +22,7 @@ Database: MongoDB
 ### Installing
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/reacttalk.git
+git clone https://github.com/LordBugsy/ReactTalk.git
 ```
 
 2. Run the app:
@@ -38,5 +38,5 @@ This project is licensed under the MIT License - see the [LICENCE file](./Licenc
 ## Contact and Contributions
 If you have any questions, suggestions, or would like to discuss the project further, feel free to reach out:
 
-- **GitHub**: [LordBugsy](https://github.com/lordbugsy)
-- **Twitter**: [@LordBugsy](https://twitter.com/lordbugsy)
+- **GitHub**: [LordBugsy](https://github.com/LordBugsy)
+- **Twitter/X**: [Bugsy](https://twitter.com/mylordbugsy)
