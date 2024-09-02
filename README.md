@@ -29,7 +29,7 @@ git clone https://github.com/LordBugsy/ReactTalk.git
 
 2. Run the app:
 ```bash
-npm start
+npm run start
 ```
 
 And voilà! I have added many comments and explanations in both the Backend and Frontend folders to help you understand how and why each code was done that way! :)
