@@ -12,9 +12,9 @@ ReactTalk is a real-time chat application where users can create and join discus
 - **Profile Informations:** Reacters can, in their account settings, look at which Talks they've created and joined.
 
 ## Technologies Used:
-Frontend: ReactJS
-Backend: Express
-Database: MongoDB
+**Frontend**: ReactJS
+**Backend**: Express
+**Database**: MongoDB
 
 ## Getting Started
 ### Prerequisites
@@ -29,7 +29,7 @@ git clone https://github.com/LordBugsy/ReactTalk.git
 
 2. Run the app:
 ```bash
-npm run start
+npm start
 ```
 
 And voilà! I have added many comments and explanations in both the Backend and Frontend folders to help you understand how and why each code was done that way! :)
